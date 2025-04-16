@@ -30,7 +30,8 @@ public class API {
         try {
 
             /*Fazemos a requisicao da API, formando a url usando o nome da cidade e requisitando uma resposta à API*/
-            URL url = new URL("http://api.weatherapi.com/v1/current.json?key=8f677e44b4174029beb191037242603&q=" + cidade + "&aqi=no&lang=pt");
+            URL url = new URL("http://api.weatherapi.com/v1/current.json?key=Sua_Chave_API&q=" + cidade + "&aqi=no&lang=pt");
+            /*Para utilizar o código, substitua "Sua_Chave_API" por sua chave API WeatherAPI, por questões de segurança, não a deixo pública*/
 
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestProperty("Content-Type", "application/json");
